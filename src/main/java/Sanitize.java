@@ -88,10 +88,10 @@ public class Sanitize {
             for (Field field : arg.getClass().getFields()) {
                 if (field.getType().isInstance("")) {
                     field.set(arg, dataConverter((String) field.get(arg)));
-                }else if (field.getType().isInstance(json)){
-                    field.set(arg,dataInput((JSONObject) field.get(arg)));
-                }else if (field.getType().isInstance(list)){
-                    field.set(arg,dataInput((List<Object>) field.get(arg)));
+                } else if (field.getType().isInstance(json)) {
+                    field.set(arg, dataInput((JSONObject) field.get(arg)));
+                } else if (field.getType().isInstance(list)) {
+                    field.set(arg, dataInput((List<Object>) field.get(arg)));
                 }
             }
         }

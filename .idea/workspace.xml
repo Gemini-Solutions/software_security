@@ -60,12 +60,12 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SanitizeTest.forClassWithJson">
-    <configuration name="SanitizeTest.forClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SanitizeTest.simpleJsonWithinList">
+    <configuration name="SanitizeTest.JsonWithJsonArrayWithinList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EJ" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SanitizeTest" />
-      <option name="METHOD_NAME" value="forClass" />
+      <option name="METHOD_NAME" value="JsonWithJsonArrayWithinList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -91,16 +91,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SanitizeTest.liftoffClassObjects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EJ" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SanitizeTest" />
-      <option name="METHOD_NAME" value="liftoffClassObjects" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SanitizeTest.simpleJSONwithStringArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EJ" />
       <option name="PACKAGE_NAME" value="" />
@@ -111,13 +101,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SanitizeTest.simpleJsonWithinList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EJ" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SanitizeTest" />
+      <option name="METHOD_NAME" value="simpleJsonWithinList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SanitizeTest.simpleJsonWithinList" />
+        <item itemvalue="JUnit.SanitizeTest.JsonWithJsonArrayWithinList" />
         <item itemvalue="JUnit.SanitizeTest.forClassWithJson" />
-        <item itemvalue="JUnit.SanitizeTest.forClassWithInheritance" />
         <item itemvalue="JUnit.SanitizeTest.simpleJSONwithStringArray" />
-        <item itemvalue="JUnit.SanitizeTest.liftoffClassObjects" />
-        <item itemvalue="JUnit.SanitizeTest.forClass" />
+        <item itemvalue="JUnit.SanitizeTest.forClassWithInheritance" />
       </list>
     </recent_temporary>
   </component>

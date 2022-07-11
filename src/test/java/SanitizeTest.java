@@ -13,7 +13,7 @@ class SanitizeTest {
 
     @Test
     void forString() {
-
+        /* For Basic Strings */
         assertEquals("XXXSampleStringXXX", Sanitize.dataInput("SampleString"), "Objects should be identical");
         assertEquals("XXX12T34XXX", Sanitize.dataInput("12T34"), "Objects should be identical");
         assertEquals("XXX@#$Test%^XXX", Sanitize.dataInput("@#$Test%^"), "Objects should be identical");
@@ -21,6 +21,7 @@ class SanitizeTest {
 
     @Test
     void simpleList() {
+        /*Basic String List*/
         List<Object> list = Arrays.asList("100", "hi");
         List<Object> exList = Arrays.asList("XXX100XXX", "XXXhiXXX");
         assertEquals(exList, Sanitize.dataInput(list), "Objects should be identical");
@@ -66,6 +67,7 @@ class SanitizeTest {
 
     @Test
     void JsonWithJsonArrayWithinList() {
+        /*This is a list which has json object and that json object has json array in it*/
         List<Object> list = new LinkedList<>(Arrays.asList("100", 23, false, "hi", true, 33.43));
         List<Object> exList = new LinkedList<>(Arrays.asList("XXX100XXX", 23, false, "XXXhiXXX", true, 33.43));
         JSONObject json = new JSONObject();
@@ -110,7 +112,9 @@ class SanitizeTest {
     }
 
     @Test
-    void simpleJSONwithStringArray() {
+    void simpleJSONwithJsonArray() {
+        /* Structure JSONObject(String, Boolean, JsonArray(JsonObject(string, boolean), string, JsonArray(string, boolean, JSONObject)))*/
+        /*Basically JSONObject has JSONArray, and it has string list & object */
         JSONObject json = new JSONObject();
         json.put("name", "Student");
         json.put("age", 23);
@@ -135,8 +139,13 @@ class SanitizeTest {
         item2.put("XXXinformationXXX", "XXXtestXXX");
         item2.put("XXXidXXX", 3);
         array2.put(item2);
+        JSONObject item22 = new JSONObject();
+        item22.put("info", "teeest");
+        item22.put("id1", 3);
         array2.put("XXXsampleXXX");
-        List<Object> exList = Arrays.asList("XXX100XXX", 23, false, "XXXhiXXX", true, 33.43);
+        List<Object> exList = new LinkedList<>(Arrays.asList("XXX100XXX", 23, false, "XXXhiXXX", true, 33.43));
+        array2.put(exList);
+        exList.add(item22);
         array2.put(exList);
         exJson.put("XXXcourseXXX", array2);
 
@@ -147,6 +156,7 @@ class SanitizeTest {
 
     @Test
     void forClass() throws IllegalAccessException {
+        /* Basic Class */
         Employee emp = new Employee();
         emp.setEmp_id(101);
         emp.setName("Emma Watson");
@@ -164,7 +174,8 @@ class SanitizeTest {
     }
 
     @Test
-    void liftOfClassObjects() throws IllegalAccessException {
+    void listOfClassObjects() throws IllegalAccessException {
+        /* this list consist of two objects */
         Employee emp = new Employee();
         emp.setEmp_id(101);
         emp.setName("Emma Watson");
@@ -195,6 +206,7 @@ class SanitizeTest {
 
     @Test
     void forClassWithJson() throws IllegalAccessException {
+        /* this test case consist of inheritance, class with json  and class with list */
         JSONObject json = new JSONObject();
         json.put("name", "Student");
         json.put("age", 23);
