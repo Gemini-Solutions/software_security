@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19c3bb5c-7c51-4305-82ac-f9fd0f9d173a" name="Changes" comment="" />
+    <list default="true" id="19c3bb5c-7c51-4305-82ac-f9fd0f9d173a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_31_1_jre.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_owasp_java_html_sanitizer_owasp_java_html_sanitizer_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EJ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EJ.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SanitizeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SanitizeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SanitizeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SanitizeTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +59,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2BTv2tE83fK30gFk8tFOaDqboto" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -60,7 +91,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SanitizeTest.simpleJsonWithinList">
+  <component name="RunManager" selected="JUnit.SanitizeTest.sanitize">
     <configuration name="SanitizeTest.JsonWithJsonArrayWithinList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EJ" />
       <option name="PACKAGE_NAME" value="" />
@@ -71,21 +102,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SanitizeTest.forClassWithInheritance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EJ" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SanitizeTest" />
-      <option name="METHOD_NAME" value="forClassWithInheritance" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SanitizeTest.forClassWithJson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EJ" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SanitizeTest" />
       <option name="METHOD_NAME" value="forClassWithJson" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SanitizeTest.sanitize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EJ" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SanitizeTest" />
+      <option name="METHOD_NAME" value="sanitize" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -113,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SanitizeTest.sanitize" />
+        <item itemvalue="JUnit.SanitizeTest.forClassWithJson" />
         <item itemvalue="JUnit.SanitizeTest.simpleJsonWithinList" />
         <item itemvalue="JUnit.SanitizeTest.JsonWithJsonArrayWithinList" />
-        <item itemvalue="JUnit.SanitizeTest.forClassWithJson" />
         <item itemvalue="JUnit.SanitizeTest.simpleJSONwithStringArray" />
-        <item itemvalue="JUnit.SanitizeTest.forClassWithInheritance" />
       </list>
     </recent_temporary>
   </component>

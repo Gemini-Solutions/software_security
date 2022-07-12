@@ -1,6 +1,8 @@
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.junit.jupiter.api.Test;
+import org.owasp.html.PolicyFactory;
+import org.owasp.html.Sanitizers;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -217,6 +219,27 @@ class SanitizeTest {
         System.out.println(mb.toString());
         Sanitize.dataInput(mb);
         System.out.println(mb.toString());
+    }
+
+    @Test
+    void sanitize() {
+        PolicyFactory policy = Sanitizers.FORMATTING.and(Sanitizers.LINKS);
+//        PolicyFactory policy = Sanitizers.FORMATTING;
+        String untrustedHTML = "<!DOCTYPE html>\n" +
+                "<html>\n" +
+                "<body>\n" +
+                "\n" +
+                "<h2>HTML Links</h2>\n" +
+                "<p>HTML links are defined with the a tag:</p>\n" +
+                "\n" +
+                "<a href=\"https://www.w3schools.com\">This is a link</a>\n" +
+                "\n" +
+                "</body>\n" +
+                "</html>\n" +
+                "\n";
+        String safeHTML = policy.sanitize(untrustedHTML);
+        System.out.println("Before data : " + untrustedHTML);
+        System.out.println("After data : " + safeHTML.trim());
     }
 
 
