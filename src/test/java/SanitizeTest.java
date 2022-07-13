@@ -1,8 +1,8 @@
+/*Note : Every Comment is about the type of data which is given to dataInput method.*/
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.junit.jupiter.api.Test;
-import org.owasp.html.PolicyFactory;
-import org.owasp.html.Sanitizers;
+import org.owasp.html.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -31,6 +31,7 @@ class SanitizeTest {
 
     @Test
     void simpleListWithNumbersAndBoolean() {
+        /* List of string number and boolean */
         List<Object> list = Arrays.asList("100", 23, false, "hi", true, 33.43);
         List<Object> exList = Arrays.asList("XXX100XXX", 23, false, "XXXhiXXX", true, 33.43);
         assertEquals(exList, Sanitize.dataInput(list), "Objects should be identical");
@@ -38,20 +39,22 @@ class SanitizeTest {
 
     @Test
     void listWithinList() {
+        /* list of list */
         List<Object> list = new LinkedList<>(Arrays.asList("100", 23, false, "hi", true, 33.43));
         List<Object> exList = new LinkedList<>(Arrays.asList("XXX100XXX", 23, false, "XXXhiXXX", true, 33.43));
         List<Object> SubList = Arrays.asList("SubListValue", 23, false);
         List<Object> exSubList = Arrays.asList("XXXSubListValueXXX", 23, false);
         list.add(SubList);
         exList.add(exSubList);
-        System.out.println(exList);
+        System.out.println("Expected: " + exList);
         List<Object> fun = Sanitize.dataInput(list);
-        System.out.println(fun);
+        System.out.println("Actual: " + fun);
         assertEquals(exList, fun, "Objects should be identical");
     }
 
     @Test
     void simpleJsonWithinList() {
+        /*list of json object */
         List<Object> list = new LinkedList<>(Arrays.asList("100", 23, false, "hi", true, 33.43));
         List<Object> exList = new LinkedList<>(Arrays.asList("XXX100XXX", 23, false, "XXXhiXXX", true, 33.43));
         JSONObject json = new JSONObject();
@@ -101,6 +104,7 @@ class SanitizeTest {
 
     @Test
     void simpleJSON() {
+        /*Simple JSON Object */
         JSONObject json = new JSONObject();
         json.put("name", "Student");
         json.put("age", 23);
@@ -115,8 +119,7 @@ class SanitizeTest {
 
     @Test
     void simpleJSONwithJsonArray() {
-        /* Structure JSONObject(String, Boolean, JsonArray(JsonObject(string, boolean), string, JsonArray(string, boolean, JSONObject)))*/
-        /*Basically JSONObject has JSONArray, and it has string list & object */
+        /*This is json object with json array which has json object, string & another json array and*/
         JSONObject json = new JSONObject();
         json.put("name", "Student");
         json.put("age", 23);
@@ -142,11 +145,10 @@ class SanitizeTest {
         item2.put("XXXidXXX", 3);
         array2.put(item2);
         JSONObject item22 = new JSONObject();
-        item22.put("info", "teeest");
-        item22.put("id1", 3);
+        item22.put("XXXinfoXXX", "XXXteeestXXX");
+        item22.put("XXXid1XXX", 3);
         array2.put("XXXsampleXXX");
         List<Object> exList = new LinkedList<>(Arrays.asList("XXX100XXX", 23, false, "XXXhiXXX", true, 33.43));
-        array2.put(exList);
         exList.add(item22);
         array2.put(exList);
         exJson.put("XXXcourseXXX", array2);
@@ -223,24 +225,23 @@ class SanitizeTest {
 
     @Test
     void sanitize() {
+        // Example of JAVA HTML Sanitizer
         PolicyFactory policy = Sanitizers.FORMATTING.and(Sanitizers.LINKS);
-//        PolicyFactory policy = Sanitizers.FORMATTING;
-        String untrustedHTML = "<!DOCTYPE html>\n" +
-                "<html>\n" +
-                "<body>\n" +
-                "\n" +
-                "<h2>HTML Links</h2>\n" +
-                "<p>HTML links are defined with the a tag:</p>\n" +
-                "\n" +
-                "<a href=\"https://www.w3schools.com\">This is a link</a>\n" +
-                "\n" +
-                "</body>\n" +
-                "</html>\n" +
-                "\n";
+        //PolicyFactory policy = Sanitizers.FORMATTING;
+        String untrustedHTML = "<!DOCTYPE html> <html> <body> <h2>HTML Links</h2> " +
+                "<p>HTML links are defined with the a tag:</p> <a href=\"https://www.w3schools.com\">This is a link</a>" +
+                "</body> </html>" ;
         String safeHTML = policy.sanitize(untrustedHTML);
-        System.out.println("Before data : " + untrustedHTML);
-        System.out.println("After data : " + safeHTML.trim());
+        //System.out.println("Before data : " + untrustedHTML);
+        //System.out.println("After data : " + safeHTML.trim());
+
+        // Case : When we don't want to allow anything in a policy.
+        PolicyFactory policyBuilder = new HtmlPolicyBuilder()
+                .toFactory();
+        String safeNew = policyBuilder.sanitize(safeHTML);
+        System.out.println(safeNew.trim());
     }
+
 
 
 }
