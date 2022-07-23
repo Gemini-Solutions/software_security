@@ -5,39 +5,65 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19c3bb5c-7c51-4305-82ac-f9fd0f9d173a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_io7m_xom_xom_1_2_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_configuration_commons_configuration_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_neko_htmlunit_2_61_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_extras_beanshell_bsh_2_0b6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_client5_httpclient5_5_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_core5_httpcore5_5_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_core5_httpcore5_h2_5_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_constants_1_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_css_1_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_i18n_1_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_shared_resources_1_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_util_1_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_xmlgraphics_commons_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_owasp_antisamy_antisamy_1_6_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_owasp_esapi_esapi_2_4_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_12_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_ext_1_3_04.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__avalon_framework_avalon_framework_4_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_guicedee_services_log4j_core_1_0_13_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_guicedee_services_sl4j_1_0_13_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_core_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jaxen_jaxen_1_1_beta_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jdom_jdom_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__logkit_logkit_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_nekohtml_nekohtml_1_9_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_beanshell_bsh_core_2_0b4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_xalan_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xmlParserAPIs_2_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xom_xom_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ESAPI.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/validation.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_io7m_xom_xom_1_2_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_configuration_commons_configuration_1_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_configuration_commons_configuration_1_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_11_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_neko_htmlunit_2_61_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_extras_beanshell_bsh_2_0b6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_client5_httpclient5_5_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_core5_httpcore5_5_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_core5_httpcore5_h2_5_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_constants_1_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_css_1_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_css_1_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_i18n_1_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_ext_1_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_shared_resources_1_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_util_1_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_util_1_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_xmlgraphics_commons_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_owasp_antisamy_antisamy_1_6_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_owasp_antisamy_antisamy_1_4_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_owasp_esapi_esapi_2_4_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_owasp_esapi_esapi_2_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_12_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EJ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EJ.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InheritExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InheritExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Sanitize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanitize.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SanitizeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SanitizeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/InheritExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/InheritExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MountainBike.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MountainBike.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Sanitize.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Sanitize.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/SanitizeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SanitizeTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,6 +92,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar:///usr/lib/jvm/jdk-17/lib/src.zip!/java.base/java/util/List.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/owasp/esapi/esapi/2.4.0.0/esapi-2.4.0.0-sources.jar!/org/owasp/esapi/Encoder.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -91,43 +118,62 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SanitizeTest.simpleJSONwithJsonArray">
-    <configuration name="SanitizeTest.JsonWithJsonArrayWithinList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.SanitizeTest.listOfClassObjects">
+    <configuration name="SanitizeTest.forClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EJ" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SanitizeTest" />
-      <option name="METHOD_NAME" value="JsonWithJsonArrayWithinList" />
+      <option name="METHOD_NAME" value="forClass" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SanitizeTest.listWithinList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SanitizeTest.forClassWithJson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EJ" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SanitizeTest" />
-      <option name="METHOD_NAME" value="listWithinList" />
+      <option name="METHOD_NAME" value="forClassWithJson" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SanitizeTest.sanitize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SanitizeTest.listOfClassObjects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EJ" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SanitizeTest" />
-      <option name="METHOD_NAME" value="sanitize" />
+      <option name="METHOD_NAME" value="listOfClassObjects" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SanitizeTest.simpleJSON" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EJ" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SanitizeTest" />
+      <option name="METHOD_NAME" value="simpleJSON" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,23 +189,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SanitizeTest.simpleJsonWithinList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EJ" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SanitizeTest" />
-      <option name="METHOD_NAME" value="simpleJsonWithinList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SanitizeTest.listOfClassObjects" />
+        <item itemvalue="JUnit.SanitizeTest.forClassWithJson" />
+        <item itemvalue="JUnit.SanitizeTest.forClass" />
         <item itemvalue="JUnit.SanitizeTest.simpleJSONwithJsonArray" />
-        <item itemvalue="JUnit.SanitizeTest.JsonWithJsonArrayWithinList" />
-        <item itemvalue="JUnit.SanitizeTest.simpleJsonWithinList" />
-        <item itemvalue="JUnit.SanitizeTest.listWithinList" />
-        <item itemvalue="JUnit.SanitizeTest.sanitize" />
+        <item itemvalue="JUnit.SanitizeTest.simpleJSON" />
       </list>
     </recent_temporary>
   </component>

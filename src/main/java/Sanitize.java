@@ -1,8 +1,11 @@
 /* Note : 1. Every Instanceof condition is to check the type of element with the desired type
-*         2. dataInput is being used recursively throughout for the cases like object within same object*/
+ *         2. dataInput is being used recursively throughout for the cases like object within same object*/
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.owasp.html.HtmlPolicyBuilder;
+import org.owasp.html.PolicyFactory;
+import org.owasp.html.Sanitizers;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
@@ -78,18 +81,18 @@ public class Sanitize {
           NOTE: 1. In JSON Object if you add a list then its type will be JSONArray.
                 2. If we change key in fist iteration then after first key it will return null as Json Object is
                 being updated.*/
+
         try {
             List<Object> keys = new ArrayList<>();
             arg.keys().forEachRemaining(key -> {
                 Object value = arg.get(key);
                 keys.add(key);
-                if (value instanceof JSONArray) {
+                if (value instanceof JSONObject) {
+                    arg.put(key, dataInput((JSONObject) value));
+                } else if (value instanceof JSONArray) {
                     arg.put(key, dataInput((JSONArray) value));
-
-                } else {
-                    if (value instanceof String) {
-                        arg.put(key, dataConverter((String) value));
-                    }
+                } else if (value instanceof String) {
+                    arg.put(key, dataConverter((String) value));
                 }
             });
             /*[For Keys]: At above iteration we take all the key and store this into a list and sent
@@ -98,8 +101,10 @@ public class Sanitize {
             List<Object> newKeys = new ArrayList<>(keys);
             dataInput(newKeys);
             for (int i = 0; i < newKeys.size(); i++) {
-                arg.put((String) newKeys.get(i), arg.get((String) keys.get(i)));
-                arg.remove((String) keys.get(i));
+                if(!newKeys.get(i).equals(keys.get(i))) {
+                    arg.put((String) newKeys.get(i), arg.get((String) keys.get(i)));
+                    arg.remove((String) keys.get(i));
+                }
             }
         } catch (Exception e) {
             System.err.println(e.getMessage());
@@ -112,12 +117,15 @@ public class Sanitize {
           LOGIC:Takes an Object then check its type whether it is String, JSONObject & List<Object>.
           if value is of string type then call dataConverter and sanitize the string otherwise call
           dataInput according to the type of element.*/
-
         JSONObject json = new JSONObject();
         List<Object> list = new ArrayList<>();
         /*Below Condition is to check if object is user defined or not*/
         if (!(arg.getClass().getName().contains("java."))) {
-            for (Field field : arg.getClass().getFields()) {
+            Field[] fields = arg.getClass().getFields();
+            if( fields.length == 0){
+                fields = arg.getClass().getDeclaredFields();
+            }
+            for (Field field : fields) {
                 /* Below condition is to check the type of particular field and isInstance takes value
                 to compare that's why we have to initialize string, json and list*/
                 if (field.getType().isInstance("")) {
@@ -139,7 +147,9 @@ public class Sanitize {
 
     public static String sanitization(String s) {
         /*This method takes string as input and return sanitized string*/
-        return "XXX" + s + "XXX";
+        PolicyFactory policy = Sanitizers.FORMATTING;
+        return policy.sanitize(s).replace("&#64;", "@");
+//        return "XXX"+s+"XXX";
     }
 
 }
